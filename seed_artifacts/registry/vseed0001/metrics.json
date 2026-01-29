@@ -1,0 +1,5 @@
+{
+  "accuracy": 0.52,
+  "macro_f1": 0.5,
+  "note": "Placeholder metrics for rule-based seed"
+}

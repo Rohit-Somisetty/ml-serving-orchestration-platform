@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mlp-serving-config
+  namespace: mlp
+  labels:
+    app.kubernetes.io/name: mlp-serving
+    app.kubernetes.io/component: api
+  annotations:
+    mlp/source: seed
+data:
+  MODEL_ALIAS: stable
+  MLP_MAX_BATCH: "64"
+  MLP_MAX_TEXT_CHARS: "6000"
+  MLP_SOFT_TIMEOUT_MS: "800"
+  CANARY_ALIAS: ""
+  CANARY_PERCENT: "0"

@@ -1,0 +1,29 @@
+{
+  "model_version": "vseed0001",
+  "default": {
+    "category": "home",
+    "confidence": 0.58
+  },
+  "rules": [
+    {
+      "category": "furniture",
+      "keywords": ["sofa", "couch", "table", "chair", "desk"],
+      "confidence": 0.76
+    },
+    {
+      "category": "electronics",
+      "keywords": ["laptop", "phone", "camera", "tablet", "speaker"],
+      "confidence": 0.71
+    },
+    {
+      "category": "outdoors",
+      "keywords": ["tent", "grill", "bike", "kayak", "lantern"],
+      "confidence": 0.69
+    },
+    {
+      "category": "kitchen",
+      "keywords": ["knife", "pan", "blender", "mixer", "cookware"],
+      "confidence": 0.7
+    }
+  ]
+}

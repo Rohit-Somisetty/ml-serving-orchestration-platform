@@ -1,0 +1,7 @@
+{
+  "model_version": "vseed0001",
+  "created_at": "2025-01-01T00:00:00Z",
+  "dataset": "seed_rule_based",
+  "features": ["text", "price", "brand"],
+  "notes": "Rule-based fallback model for demos"
+}

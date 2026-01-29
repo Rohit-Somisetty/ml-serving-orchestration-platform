@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mlp-serving-config
+  namespace: mlp
+data:
+  CANARY_ALIAS: candidate
+  CANARY_PERCENT: "10"
