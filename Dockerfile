@@ -9,12 +9,12 @@ WORKDIR /app
 COPY pyproject.toml README.md /app/
 COPY src /app/src
 COPY data /app/data
-COPY artifacts /app/artifacts
 COPY seed_artifacts /app/seed_artifacts
-COPY outputs /app/outputs
 COPY scripts /app/scripts
 COPY tests /app/tests
 COPY Makefile /app/Makefile
+
+RUN mkdir -p /app/artifacts /app/outputs /app/.cache
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends build-essential \

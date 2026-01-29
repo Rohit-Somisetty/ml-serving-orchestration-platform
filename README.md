@@ -105,6 +105,8 @@ docker run -p 8000:8000 mlp-api
 docker compose up --build
 ```
 
+The image bundles `seed_artifacts/` so the registry seeds itself automatically on first boot, and the container startup scripts create `/app/artifacts` and `/app/outputs` before serving traffic—no local artifacts or outputs are required in the build context.
+
 ## CI/CD
 GitHub Actions workflow (`.github/workflows/ci.yml`) runs Ruff, MyPy, and Pytest on pushes/PRs to `main`/`master`.
 

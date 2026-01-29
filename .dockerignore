@@ -1,0 +1,10 @@
+# Reduce Docker build context noise
+.venv/
+__pycache__/
+*.pyc
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+outputs/
+artifacts/
+.cache/
